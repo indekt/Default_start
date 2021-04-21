@@ -7,9 +7,9 @@ cat > ~/eula.txt <<- EOM
 #Wed Apr 21 11:30:29 UTC 2021
 eula=true
 EOM
-touch default_start.sh
+touch ~/default_start.sh
 cat > ~/default_start.sh <<- EOM
 screen -AmdS Minecraft java -Xms2G -Xmx6G -XX:+UnlockExperimentalVMOptions -XX:MaxGCPauseMillis=10 -jar spigot-*.jar
 EOM
-sudo chmod +x default_start.sh
-./default_start.sh
+sudo ~/chmod +x default_start.sh
+./~/default_start.sh
