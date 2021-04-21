@@ -1,7 +1,3 @@
-sudo apt update -y && sudo apt upgrade -y
-sudo apt install default-jdk git -y
-sudo apt update -y && sudo apt upgrade -y
-sudo apt clean
 curl -v -o ~/BuildTools.jar https://hub.spigotmc.org/jenkins/job/BuildTools/lastSuccessfulBuild/artifact/target/BuildTools.jar
 git config --global --unset core.autocrlf
 java -jar ~/BuildTools.jar
@@ -17,4 +13,3 @@ screen -AmdS Minecraft java -Xms2G -Xmx6G -XX:+UnlockExperimentalVMOptions -XX:M
 EOM
 sudo chmod +x default_start.sh
 ./default_start.sh
-exit
