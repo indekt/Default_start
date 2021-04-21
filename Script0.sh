@@ -8,4 +8,3 @@ fi
 if ! hash screen 2>/dev/null; then
     sudo apt install screen -y && sudo apt upgrade && sudo apt clean
 fi
-sudo git clone https://github.com/indekt/Default_start.git
