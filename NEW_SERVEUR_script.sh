@@ -1,5 +1,6 @@
 sudo apt update -y && sudo apt upgrade -y
-sudo apt install default-jdk git -y
+sudo apt install default-jdk -y
+sudo apt install git -y
 sudo apt update -y && sudo apt upgrade -y
 sudo apt clean
 git clone https://github.com/indekt/Default_start.git
